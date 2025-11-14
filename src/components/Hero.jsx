@@ -1,5 +1,6 @@
 import React from "react";
 import { CalendarCheck } from "lucide-react";
+import hero from "../assets/hero.jpg";
 
 const Hero = () => {
   return (
@@ -21,6 +22,13 @@ const Hero = () => {
             <CalendarCheck className="w-5 h-5 mr-2" />
             Book An Appointment
           </a>
+        </div>
+        <div className="flex justify-center">
+          <img
+            src={hero}
+            alt="dental"
+            className="w-80 lg:w-[500px] rounded-4xl"
+          />
         </div>
       </div>
     </section>
