@@ -4,7 +4,7 @@ import hero from "../assets/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="scroll-m-20 py-16 bg-sky-50">
+    <section id="home" className="scroll-m-20 py-16 bg-sky-50">
       <div className="container mx-auto px-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         <div className="max-w-xl text-center space-y-6 lg:text-left ">
           <h1 className="text-xl sm:text-4xl lg:text-5xl  font-bold text-sky-900 leading-tight ">
