@@ -58,12 +58,18 @@ const Tips = () => {
             </motion.div>
           ))}
           {activeTip !== null && (
-            <div>
-              <div>
-                <div>{tips[activeTip].icon}</div>
+            <div className="col-span-full shadow-md bg-sky-200 p-10 my-6 text-start rounded-2xl">
+              <div className="flex  flex-col md:flex-row items-center gap-5 ">
+                <div className="bg-white p-3 flex-shrink-0 shadow-lg rounded-2xl">
+                  {tips[activeTip].icon}
+                </div>
                 <div>
-                  <h4 className=" font-bold">{tips[activeTip].title}</h4>
-                  <p>{tips[activeTip].desc}</p>
+                  <h4 className=" font-bold text-xl mb-3">
+                    {tips[activeTip].title}
+                  </h4>
+                  <p className="text-gray-500 font-semibold">
+                    {tips[activeTip].desc}
+                  </p>
                 </div>
               </div>
             </div>
