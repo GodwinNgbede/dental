@@ -17,7 +17,7 @@ const tips = [
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptas cumque expedita, ducimus est porro excepturi sed in id officiis",
   },
   {
-    icon: <CiDroplet className="w-10 h-10 text-dark-500" />,
+    icon: <CiDroplet className="w-10 h-10 text-purple-500" />,
     title: "Gum Care",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptas cumque expedita, ducimus est porro excepturi sed in id officiis",
   },
@@ -34,7 +34,7 @@ const tips = [
 ];
 
 const Tips = () => {
-  const [activeTip, setActiveTip] = useState(null);
+  const [activeTip, setActiveTip] = useState(0);
 
   return (
     <section id="tips" className="scroll-mt-20 py-20">
@@ -74,6 +74,24 @@ const Tips = () => {
               </div>
             </div>
           )}
+        </div>
+        {/* PAGINATION DOTS */}
+        <div className=" flex justify-center gap-3 mt-3">
+          {tips.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTip(index)}
+              className={`
+              w-2 h-2 rounded-full transition-all cursor-pointer
+              ${
+                activeTip === index
+                  ? "bg-blue-600 W-4 scale-125"
+                  : "bg-gray-300"
+              }
+            `}
+              aria-label={`Go to ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
