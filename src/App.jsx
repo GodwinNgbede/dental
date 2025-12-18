@@ -6,6 +6,7 @@ import About from "./components/About";
 import Tips from "./components/Tips";
 import BookAppointment from "./components/BookAppointment";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Tips />
       <BookAppointment />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
