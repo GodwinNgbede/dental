@@ -125,8 +125,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between text-sky-300 text-sm font-semibold pt-8 ">
-        <p className="justify-start md:mb-0">
+      <div className="flex flex-col md:flex-row justify-between text-sky-300 text-sm font-semibold px-8 ">
+        <p className="justify-start mb-3 md:mb-0">
           &copy; {new Date().getFullYear()} Smile Dental Clinic. All rights
           reserved
         </p>
